@@ -3,16 +3,16 @@
     padding: 0;
 }
 
+
 .social_icons {
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     padding-bottom: 35px;
     padding-top: 5px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(121, 119, 119);
+    background-color:#292935;
     li {
         list-style: none;
         &:hover{
@@ -46,7 +46,7 @@
                     background-color: #6ab6f0;
                 }
             }
-            &:nth-child(4) a{
+            &:nth-child(5) a{
                 background-color: 	#FF0000;
                 &::before{
                     background-color: #d40101;
@@ -55,7 +55,7 @@
                     background-color: #fd2626;
                 }
             }
-            &:nth-child(5) a{
+            &:nth-child(6) a{
                 background-color: 	#007bb5;
                 &::before{
                     background-color: #036ea0;
@@ -64,7 +64,7 @@
                     background-color: #0395d8;
                 }
             }
-            &:nth-child(6) a{
+            &:nth-child(4) a{
                 background-color: 	#97a1a7;
                 &::before{
                     background-color: #717374;
@@ -124,3 +124,6 @@
 }
 }
 
+@media only screen and (min-width:768px){
+    
+}
