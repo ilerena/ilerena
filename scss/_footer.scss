@@ -1,0 +1,12 @@
+.footer{
+    background-color: #292935;
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+@media only screen and (max-width:480px){
+    .footer img{
+        max-width: 300px;
+    }
+}

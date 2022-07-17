@@ -124,6 +124,63 @@
 }
 }
 
-@media only screen and (min-width:768px){
-    
+@media only screen and (max-width:768px){
+    .social_icons li{
+        transform: scale(.7);
+        padding: 15px;
+        &:nth-child(1) a{
+            background-color: #6381c0;
+            &::before{
+                background-color: #607ebe;
+            }
+            &::after{
+                background-color: #6d84b6;
+            }
+        }
+        &:nth-child(2) a{
+            background-color: #e47cb5;
+            &::before{
+                background-color: #ec6ab2;
+            }
+            &::after{
+                background-color: #f18ec4;
+            }
+        }
+        &:nth-child(3) a{
+            background-color: 	#55acee;
+            &::before{
+                background-color: #43a3ec;
+            }
+            &::after{
+                background-color: #6ab6f0;
+            }
+        }
+        &:nth-child(5) a{
+            background-color: 	#eb7474;
+            &::before{
+                background-color: #d86b6b;
+            }
+            &::after{
+                background-color: #ee8989;
+            }
+        }
+        &:nth-child(6) a{
+            background-color: 	#0596da;
+            &::before{
+                background-color: #058ac7;
+            }
+            &::after{
+                background-color: #18abf0;
+            }
+        }
+        &:nth-child(4) a{
+            background-color: 	#97a1a7;
+            &::before{
+                background-color: #717374;
+            }
+            &::after{
+                background-color: #a2a7aa;
+            }
+        }
+    }
 }
