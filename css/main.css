@@ -8,7 +8,8 @@ body {
 .social_icons {
   width: 100%;
   padding-bottom: 35px;
-  padding-top: 5px;
+  padding-top: 20px;
+  margin-bottom: -10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -138,15 +139,24 @@ body {
 
 .navbar-brand img {
   max-width: 30vw; }
+  .navbar-brand img:active {
+    transform: scale(0.95); }
 
 .bg-main {
   background-color: #292935; }
 
 .viewscolor {
   color: #59cbe8; }
+  .viewscolor:hover {
+    transform: scale(1.15);
+    transition: transform 0.7s;
+    color: #59cbe8; }
 
-ul li a {
-  color: #59cbe8; }
+ul li {
+  padding: 0 15px; }
+  ul li a {
+    color: #59cbe8;
+    font-size: 1.2em; }
 
 .navbar-toggler {
   border-color: #59cbe8; }
@@ -154,10 +164,17 @@ ul li a {
 .navbar-toggler-icon {
   color: #59cbe8; }
 
+@media only screen and (min-width: 1024px) {
+  .carousel-item {
+    max-height: 400px; } }
+
 .card {
   background-color: #6fd9f3;
   max-width: 800px;
   box-shadow: 0px 0px 26px 2px rgba(0, 0, 0, 0.79); }
+  .card:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s; }
 
 .conteinercards {
   width: 100%;
@@ -169,6 +186,34 @@ ul li a {
 @media only screen and (max-width: 768px) {
   .card {
     max-width: 500px; } }
+
+.cardportfolio {
+  margin: 50px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px; }
+
+#conteinerCardsPortfolio {
+  margin-top: 25px;
+  width: 100vw; }
+  #conteinerCardsPortfolio .tituloCardsPorfolio {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: #292935;
+    text-shadow: 3px 3px 13px #6fd9f3; }
+
+@media only screen and (max-width: 1024px) {
+  .cardportfolio {
+    max-width: 740px; } }
+
+@media only screen and (max-width: 768px) {
+  .cardportfolio {
+    max-width: 450px; } }
+
+@media only screen and (max-width: 480px) {
+  .cardportfolio {
+    max-width: 300px; } }
 
 #bannerFinal {
   margin-top: 25px;
@@ -195,12 +240,27 @@ ul li a {
       #bannerFinal #divTextBannerFinal a p {
         font-size: 2em;
         color: white; }
+        #bannerFinal #divTextBannerFinal a p:active {
+          transform: scale(0.95); }
+
+@media only screen and (min-width: 1024px) {
+  #divImgBannerFinal img {
+    max-height: 400px;
+    width: 100%; } }
 
 .footer {
   background-color: #292935;
   display: flex;
-  justify-content: center;
-  margin-top: -15px; }
+  justify-content: center; }
+  .footer img {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .footer img:active {
+      transform: scale(0.95); }
+
+@media only screen and (max-width: 768px) {
+  .footer img {
+    max-width: 400px; } }
 
 @media only screen and (max-width: 480px) {
   .footer img {

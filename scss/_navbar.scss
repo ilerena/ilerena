@@ -1,16 +1,30 @@
+
 .navbar-brand img{
     max-width: 30vw;
+    &:active {
+        transform: scale(.95);
+        
+    }
 }
 .bg-main{
     background-color: #292935;
 }
 .viewscolor {
     color: #59cbe8;
+    &:hover{
+        transform: scale(1.15);
+        transition: transform (.7s);
+        color: #59cbe8;
+    }
 }
-ul li a{
+ul li{
+    padding: 0 15px;
+    a{
     color: #59cbe8;
+    font-size: 1.2em;
+    
 }
-
+}
 .navbar-toggler {
     border-color: #59cbe8;
 }
