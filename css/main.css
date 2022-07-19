@@ -1,6 +1,48 @@
 body {
   background-color: #707079; }
 
+#formContacto {
+  border: double #59cbe8 2px;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 52, 48, 0.3); }
+  #formContacto #h2form {
+    background-color: #59cbe8;
+    color: #292935;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 1em;
+    margin-top: 15px; }
+  #formContacto #idform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px; }
+    #formContacto #idform p {
+      color: #59cbe8; }
+
+#divpresentacion {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  #divpresentacion p {
+    font-size: 1.3em;
+    text-align: center;
+    max-width: 80%;
+    text-align: center; }
+
+.bg-black {
+  background-color: #292935; }
+
+.margintop30 {
+  margin-top: 30px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -166,7 +208,7 @@ ul li {
 
 @media only screen and (min-width: 1024px) {
   .carousel-item {
-    max-height: 400px; } }
+    max-height: 600px; } }
 
 .card {
   background-color: #6fd9f3;
@@ -214,6 +256,36 @@ ul li {
 @media only screen and (max-width: 480px) {
   .cardportfolio {
     max-width: 300px; } }
+
+.divperfil {
+  max-height: 200px;
+  margin: 20px 0; }
+  .divperfil img {
+    max-height: 200px;
+    border-radius: 30em;
+    box-shadow: 0px 0px 44px 1px #000000; }
+
+.namePerfil {
+  font-size: 2.5em;
+  text-align: center;
+  color: #6fd9f3;
+  text-shadow: 5px 5px 7px #292935; }
+
+#divcv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  #divcv h2 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: overline;
+    margin-top: 30px; }
+  #divcv p {
+    max-width: 80%;
+    text-align: center; }
 
 #bannerFinal {
   margin-top: 25px;
