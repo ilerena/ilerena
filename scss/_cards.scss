@@ -97,3 +97,38 @@
         text-align: center;
     }
 }
+
+//productos
+.divh1productos{
+    text-align: center;
+    margin: 15px 20px;
+    .h1productos{
+        margin-top: 15px;
+        color: #6fd9f3;
+    }
+}
+.cardFlexProducto{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cardProducto {
+    max-width: 300px;
+}
+
+@media only screen and (min-width:480px){
+    .cardProducto{
+    max-width: 400px;
+}
+}
+
+@media only screen and (min-width:768px){
+    .cardProducto{
+    max-width: 700px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .cardProducto{
+    max-width: 900px;
+    }
+}
