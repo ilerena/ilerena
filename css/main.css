@@ -396,3 +396,18 @@ ul li {
 @media only screen and (max-width: 480px) {
   .footer img {
     max-width: 300px; } }
+
+.cardError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 80vw; }
+  .cardError .card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .cardError .card-body p {
+      text-align: center; }
