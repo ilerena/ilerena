@@ -13,11 +13,16 @@
         width: 100%;
         img {
             max-width: 100%; 
+            @media only screen and (min-width:1024px){
+                max-height: 400px;
+                width: 100%;
+            }   
         }
     }
     #divTextBannerFinal {
         position: absolute;
         width: max-content;
+        max-width: 80vw;
         padding: 5px 20px;
         border-radius: 1em ;
         text-align: center;
@@ -25,20 +30,16 @@
         a {
             text-decoration: none;
             p{
-            font-size: 2em;
+            font-size: 1em;
             color: white;
             &:active{
                 transform: scale(.95);
+            }
+            @media only screen and (min-width:480px){
+                font-size: 2em;
             }
         }
         
         }
 }
-}
-
-@media only screen and (min-width:1024px){
-    #divImgBannerFinal img{
-        max-height: 400px;
-        width: 100%;
-    }
 }

@@ -230,7 +230,7 @@ ul li {
   padding: 0 15px; }
   ul li a {
     color: #59cbe8;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center; }
 
 .navbar-toggler {
@@ -274,6 +274,7 @@ ul li {
   #conteinerCardsPortfolio .tituloCardsPorfolio {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-size: 3em;
     color: #292935;
     text-shadow: 3px 3px 13px #6fd9f3; }
@@ -288,7 +289,7 @@ ul li {
 
 @media only screen and (max-width: 480px) {
   .cardportfolio {
-    max-width: 300px; } }
+    max-width: 270px; } }
 
 .divperfil {
   max-height: 200px;
@@ -314,8 +315,7 @@ ul li {
   #divcv h2 {
     font-size: 2em;
     text-align: center;
-    text-decoration: overline;
-    margin-top: 30px; }
+    margin: 15px; }
   #divcv p {
     max-width: 80%;
     text-align: center; }
@@ -359,9 +359,14 @@ ul li {
     width: 100%; }
     #bannerFinal #divImgBannerFinal img {
       max-width: 100%; }
+      @media only screen and (min-width: 1024px) {
+        #bannerFinal #divImgBannerFinal img {
+          max-height: 400px;
+          width: 100%; } }
   #bannerFinal #divTextBannerFinal {
     position: absolute;
     width: max-content;
+    max-width: 80vw;
     padding: 5px 20px;
     border-radius: 1em;
     text-align: center;
@@ -369,15 +374,13 @@ ul li {
     #bannerFinal #divTextBannerFinal a {
       text-decoration: none; }
       #bannerFinal #divTextBannerFinal a p {
-        font-size: 2em;
+        font-size: 1em;
         color: white; }
         #bannerFinal #divTextBannerFinal a p:active {
           transform: scale(0.95); }
-
-@media only screen and (min-width: 1024px) {
-  #divImgBannerFinal img {
-    max-height: 400px;
-    width: 100%; } }
+        @media only screen and (min-width: 480px) {
+          #bannerFinal #divTextBannerFinal a p {
+            font-size: 2em; } }
 
 .footer {
   background-color: #292935;
@@ -395,7 +398,7 @@ ul li {
 
 @media only screen and (max-width: 480px) {
   .footer img {
-    max-width: 300px; } }
+    max-width: 80vw; } }
 
 .cardError {
   display: flex;
