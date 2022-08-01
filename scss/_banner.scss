@@ -2,10 +2,7 @@
 
 #bannerFinal {
     margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex(row,center,center);
     position: relative;
     width: 100%; 
     #divImgBannerFinal {
@@ -30,8 +27,7 @@
         a {
             text-decoration: none;
             p{
-            font-size: 1em;
-            color: white;
+            @include text(1em,1,white);
             &:active{
                 transform: scale(.95);
             }
@@ -41,5 +37,5 @@
         }
         
         }
-}
+    }
 }

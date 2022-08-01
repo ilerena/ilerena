@@ -9,16 +9,11 @@
             transform: scale(.95);
             
         }
+        @media only screen and (max-width:480px){
+            max-width: 80vw;
+        }
+        @media only screen and (max-width:768px){
+            max-width: 400px;
+        }
     }
 }
-@media only screen and (max-width:768px){
-    .footer img{
-        max-width: 400px;
-    }
-}
-@media only screen and (max-width:480px){
-    .footer img{
-        max-width: 80vw;
-    }
-}
-
