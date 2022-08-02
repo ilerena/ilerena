@@ -23,26 +23,15 @@
 }
 .social_icons {
     width: 100%;
-    padding-bottom: 35px;
-    padding-top: 20px;
-    margin-bottom: -10px;
-    display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    justify-content: space-evenly;
-    display: grid;
-    grid-template-rows: repeat(3);
-    grid-template-columns: repeat(2);
-    grid-template-areas:
-    "uno dos"
-    "tres cuatro"
-    "cinco seis";
-    background-color:#292935;
+    @include MP(0 0 -10px 0,20px 0 35px 0);
+    @include flex(row,space-evenly,center);
+    @include gridtemplate(repeat(3),repeat(2),"uno dos""tres cuatro""cinco seis");
+    background-color:$bgcolor;
     li {
         list-style: none;
         &:hover{
             .fa{
-                color: #fff;
+                color: $white;
             }
             &:nth-child(1) a{
                 background-color: #3b5999;
@@ -101,30 +90,25 @@
         }
         a {
             position: relative;
-            width: 80px;
-            height: 80px;
-            background: #fff;
-            display: flex;
+            background: $white;
+            @include wh(80px,80px);
+            @include flex(row,center,center);
             text-decoration: none;
-            align-items: center;
-            justify-content: center;
             transition: .5s;
-            box-shadow: -20px 20px 10px rgb(0, 0, 0);
+            box-shadow: -20px 20px 10px $black;
             transform: perspective(1000px) rotate(-20deg) skew(25deg) translate(0,0);
             img{
                 max-width: 70%;
             }
             i{
-                display: flex;
-                justify-content: center;
+                @include flex(row,center,center);
             }
             &:before {
                 content: "";
                 position: absolute;
                 top: 0px;
                 left: -20px;
-                height: 100%;
-                width: 18px;
+                @include wh(18px,100%);
                 background: #b2b2b2;
                 transition: 0.5s;
                 transform: rotate(0deg) skewy(-50deg) translatey(13px) translatex(2px);
@@ -134,8 +118,7 @@
                 position: absolute;
                 bottom: -20px;
                 left: -9px;
-                height: 20px;
-                width: 100%;
+                @include wh(100%,20px);
                 background: #e5e5e5;
                 transition: .5s;
                 transform: skewX(-40deg);
@@ -150,22 +133,13 @@
 
 @media only screen and(min-width:450px){
     .social_icons {
-    grid-template-columns: repeat(2);
-    grid-template-rows: repeat(2);
-    grid-template-areas:
-    "uno dos tres"
-    "cuatro cinco seis";
-    
-}
+        @include gridtemplate(repeat(2),repeat(2),"uno dos tres""cuatro cinco seis");
+    }
 }
 @media only screen and(min-width:768px){
     .social_icons {
-    grid-template-columns: repeat(6);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "uno dos tres cuatro cinco seis";
-    
-}
+        @include gridtemplate(repeat(6),auto,"uno dos tres cuatro cinco seis");
+    }
 }
 
 @media only screen and (max-width:1024px){

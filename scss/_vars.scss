@@ -23,6 +23,12 @@
     height: $height;
 }
 
+@mixin gridtemplate($column,$row,$area){
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    grid-template-areas: $area;
+}
 
 //maps
 
@@ -33,3 +39,14 @@ $boxshadows:(
     "cuatro": (rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px),
     );
 
+
+//colors
+
+$maincolor: #6fd9f3;
+$secundarycolor: #59cbe8;
+$maintransparent: rgba(37, 150, 190,.6);
+$bgcolor: #292935;
+$bgsecundary: #707079;
+$white: rgb(240,240,240);
+$black: rgb(20, 20, 20);
+$blacktransparent: rgba(0,0,0,0.79);

@@ -2,14 +2,15 @@ body {
   background-color: #707079; }
 
 #formContacto {
-  border: double #59cbe8 2px;
+  border: double #6fd9f3 2px;
   width: 60vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: rgba(0, 52, 48, 0.3); }
+  background-color: rgba(37, 150, 190, 0.6); }
   #formContacto #h2form {
-    background-color: #59cbe8;
+    background-color: #6fd9f3;
     color: #292935;
     text-align: center;
     padding: 5px 15px;
@@ -19,18 +20,24 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 15px; }
+    #formContacto #idform input, #formContacto #idform label, #formContacto #idform textarea, #formContacto #idform select {
+      width: 80%; }
+      @media only screen and (min-width: 768px) {
+        #formContacto #idform input, #formContacto #idform label, #formContacto #idform textarea, #formContacto #idform select {
+          width: 300px; } }
     #formContacto #idform p {
-      color: #59cbe8; }
+      color: #6fd9f3; }
 
 #divpresentacion {
   margin-top: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: white; }
+  align-items: center;
+  color: #f0f0f0; }
   #divpresentacion p {
     font-size: 1.3em;
     text-align: center;
@@ -67,20 +74,21 @@ body {
 
 .social_icons {
   width: 100%;
-  padding-bottom: 35px;
-  padding-top: 20px;
-  margin-bottom: -10px;
+  margin: 0 0 -10px 0;
+  padding: 20px 0 35px 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   display: grid;
-  grid-template-rows: repeat(3);
-  grid-template-columns: repeat(2);
-  grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+  grid-template-columns: repeat(3);
+  grid-template-rows: repeat(2);
+  grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
   background-color: #292935; }
   .social_icons li {
     list-style: none; }
     .social_icons li:hover .fa {
-      color: #fff; }
+      color: #f0f0f0; }
     .social_icons li:hover:nth-child(1) a {
       background-color: #3b5999; }
       .social_icons li:hover:nth-child(1) a::before {
@@ -119,28 +127,31 @@ body {
         background-color: #a2a7aa; }
     .social_icons li a {
       position: relative;
+      background: #f0f0f0;
       width: 80px;
       height: 80px;
-      background: #fff;
       display: flex;
-      text-decoration: none;
-      align-items: center;
+      flex-direction: row;
       justify-content: center;
+      align-items: center;
+      text-decoration: none;
       transition: .5s;
-      box-shadow: -20px 20px 10px black;
+      box-shadow: -20px 20px 10px #141414;
       transform: perspective(1000px) rotate(-20deg) skew(25deg) translate(0, 0); }
       .social_icons li a img {
         max-width: 70%; }
       .social_icons li a i {
         display: flex;
-        justify-content: center; }
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
       .social_icons li a:before {
         content: "";
         position: absolute;
         top: 0px;
         left: -20px;
-        height: 100%;
         width: 18px;
+        height: 100%;
         background: #b2b2b2;
         transition: 0.5s;
         transform: rotate(0deg) skewy(-50deg) translatey(13px) translatex(2px); }
@@ -149,8 +160,8 @@ body {
         position: absolute;
         bottom: -20px;
         left: -9px;
-        height: 20px;
         width: 100%;
+        height: 20px;
         background: #e5e5e5;
         transition: .5s;
         transform: skewX(-40deg); }
@@ -160,12 +171,14 @@ body {
 
 @media only screen and (min-width: 450px) {
   .social_icons {
+    display: grid;
     grid-template-columns: repeat(2);
     grid-template-rows: repeat(2);
-    grid-template-areas: "uno dos tres" "cuatro cinco seis"; } }
+    grid-template-areas: "uno dos tres" "cuatro cinco seis"; } }
 
 @media only screen and (min-width: 768px) {
   .social_icons {
+    display: grid;
     grid-template-columns: repeat(6);
     grid-template-rows: auto;
     grid-template-areas: "uno dos tres cuatro cinco seis"; } }
@@ -292,7 +305,7 @@ ul li {
   .divperfil img {
     max-height: 200px;
     border-radius: 30em;
-    box-shadow: 0px 0px 44px 1px #000000; }
+    box-shadow: 0px 0px 44px 1px #141414; }
 
 .namePerfil {
   font-size: 2.5em;
@@ -307,11 +320,11 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: #f0f0f0; }
   #divcv h2 {
     font-size: 2em;
     line-height: 1;
-    color: white;
+    color: #f0f0f0;
     text-align: center;
     margin: 15px; }
   #divcv p {
@@ -367,7 +380,7 @@ ul li {
       #bannerFinal #divTextBannerFinal a p {
         font-size: 1em;
         line-height: 1;
-        color: white; }
+        color: #f0f0f0; }
         #bannerFinal #divTextBannerFinal a p:active {
           transform: scale(0.95); }
         @media only screen and (min-width: 480px) {
@@ -377,18 +390,23 @@ ul li {
 .footer {
   background-color: #292935;
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
   .footer img {
-    margin-top: 15px;
-    margin-bottom: 15px; }
+    margin: 15px 0;
+    max-width: 250px; }
     .footer img:active {
       transform: scale(0.95); }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (min-width: 480px) {
       .footer img {
         max-width: 80vw; } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .footer img {
-        max-width: 400px; } }
+        max-width: 550px; } }
+    @media only screen and (min-width: 1028px) {
+      .footer img {
+        max-width: 700px; } }
 
 .cardError {
   display: flex;

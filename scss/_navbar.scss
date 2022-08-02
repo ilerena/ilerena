@@ -7,28 +7,28 @@
     }
 }
 .bg-main{
-    background-color: #292935;
+    background-color: $bgcolor
 }
 .viewscolor {
-    color: #59cbe8;
+    color: $secundarycolor;
     &:hover{
         transform: scale(1.15);
         transition: transform (.7s);
-        color: #59cbe8;
+        color: $secundarycolor;
     }
 }
 ul li{
     padding: 0 15px;
     a{
-    color: #59cbe8;
+    color: $secundarycolor;
     font-size: 1.5em;
     text-align: center;
     
 }
 }
 .navbar-toggler {
-    border-color: #59cbe8;
+    border-color: $secundarycolor;
 }
 .navbar-toggler-icon{
-    color: #59cbe8;
+    color: $secundarycolor;
 }

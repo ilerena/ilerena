@@ -23,11 +23,11 @@
         padding: 5px 20px;
         border-radius: 1em ;
         text-align: center;
-        background-color: rgba(37, 150, 190,.6); 
+        background-color: $maintransparent; 
         a {
             text-decoration: none;
             p{
-            @include text(1em,1,white);
+            @include text(1em,1,$white);
             &:active{
                 transform: scale(.95);
             }

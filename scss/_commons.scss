@@ -1,29 +1,31 @@
 body{
-    background-color: #707079;
+    background-color: $bgsecundary
 }
 
 #formContacto {
-    border: double #59cbe8 2px;
+    border: double $maincolor 2px;
     width: 60vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 52, 48, 0.3); 
+    @include flex(column, center,center);
+    background-color: $maintransparent; 
     #h2form {
-        background-color: #59cbe8;
-        color: #292935;
+        background-color: $maincolor;
+        color: $bgcolor;
         text-align: center;
         padding: 5px 15px;
         border-radius: 1em;
         margin-top: 15px; 
     }
     #idform {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex(column,center,center);
         margin-bottom: 15px; 
+        input,label,textarea,select {
+            width: 80%;
+            @media only screen and (min-width:768px){
+                width: 300px;
+            }
+        }
         p{
-            color: #59cbe8;
+            color: $maincolor;
         }
     }
 }
@@ -31,11 +33,8 @@ body{
 #divpresentacion{
     margin-top: 30px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center ;
-    color: white;
+    @include flex(column,center,center);
+    color: $white;
     p  {
         font-size: 1.3em;
         text-align: center;
@@ -45,7 +44,7 @@ body{
 }
 
 .bg-black{
-    background-color:#292935 ;
+    background-color:$bgcolor ;
 }
 .margintop30{
     margin-top: 30px;
